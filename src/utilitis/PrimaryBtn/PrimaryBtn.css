@@ -1,0 +1,25 @@
+.primary_btn {
+    position: relative;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.primary_btn::after {
+    content: '';
+    background-color: black;
+    width: 15px;
+    height: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.primary_btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.primary_btn:hover {
+    color: white;
+}
